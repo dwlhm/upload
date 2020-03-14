@@ -1,0 +1,171 @@
+html {
+        margin-top: 0!important;
+      }
+      #navbar {
+        padding-bottom: 130px;
+      }
+      #menu-organisasi {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      #menu-organisasi .menu-item {
+        padding: 5px 10px;
+        position:relative;
+      }
+      #menu-organisasi .menu-item:hover {
+        background: #fff;
+        color:#2a4365;
+        border-radius: .25rem;
+      }
+      #menu-organisasi .menu-item .sub-menu {
+        display:none;
+        position:relative;
+        bottom:0; 
+        z-index: 1000;
+        border-radius: .25rem;
+        padding-top: 50px;
+      }
+      #menu-organisasi .menu-item:hover .sub-menu {
+        display: block;
+      }
+      #menu-organisasi .menu-item:hover .sub-menu {
+          display: block;
+      }
+      #menu-organisasi .menu-item .sub-menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+      }
+      #menu-organisasi .menu-item .sub-menu .menu-item {
+        padding: 12px 10px;
+        background: #fff;
+      }
+      #menu-organisasi .menu-item .sub-menu .menu-item:first-child {
+        border-radius: .25rem .25rem 0 0;
+      }
+      #menu-organisasi .menu-item .sub-menu .menu-item:hover {
+        background: #2a4365;
+        color: #fff;
+        border-radius: 0;
+      }
+      #menu-organisasi .menu-item .sub-menu .menu-item:last-child {
+        border-radius: 0 0 .25rem .25rem;
+      }
+      #gallery-odd {
+        position: absolute;
+        bottom: 30px;
+        right: 0;
+      }
+      #berita, #archive, #search {
+        margin-top: -80px;
+        padding: 0 20px 30px 20px;
+      }
+      #post-wrap {
+        margin-top: -60px;
+      }
+      #gallery-wrap {
+        margin-top: -120px;
+      }
+      #berita .berita-post img {
+        height: 100%;
+        max-width: unset;
+        width: auto;
+      }
+      #jurnaljurnal-carousel, #banksoal-carousel {
+        margin-top: -140px;
+      }
+      .jurnaljurnal-carousel-card {
+        background: url("https://rawcdn.githack.com/maulana026/upload/6073d246648a40aba4520071849fc960f504d3cc/bgjournal.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      .banksoal-carousel-card {
+        background: url("https://rawcdn.githack.com/maulana026/upload/d11b3768f450da0fdbc24780b1ee4f4b675b686f/bgexam.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      nav.navigation.pagination {
+        width: 100%;
+      }
+      nav.navigation.pagination h2.screen-reader-text {
+        display: none;
+      }
+      nav.navigation.pagination .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      nav.navigation.pagination .nav-links .page-numbers.current {
+        font-weight: 100;
+      }
+      nav.navigation.pagination .nav-links .page-numbers {
+        padding: 10px 20px;
+      }
+      nav.navigation.pagination .nav-links .next.page-numbers, nav.navigation.pagination .nav-links .prev.page-numbers {
+        font-style: italic;
+      }
+      .latest-aside-desc {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.38);
+      }
+      .latest-aside-wrap {
+        position: relative;
+      }
+      @media (min-width: 1000px) {
+        #berita, #archive, #search, #post-wrap, #gallery-wrap {
+          margin-top: -125px;
+        }
+      }
+      @media (max-width: 640px) {
+        #gallery-wrap {
+          margin-top:0;
+        }
+      }
+      @media (max-width: 450px) {
+        #navbar {
+          padding: 10px 5px 100px 5px;
+        }
+        #nav-left {
+          flex-direction: column;
+        }
+        #menu-organisasi {
+          padding-bottom: 20px;
+        }
+        #web-title {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          flex-direction: column;
+          padding: 10px 5px;
+          width: 100%;
+          padding:0;
+        }
+        #pencarian {
+          margin-bottom: 15px;
+        }
+        #gallery-odd {
+          position: relative;
+          bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          margin: 0;
+          align-items: center;
+        }
+      }
+      @media (max-width:350px) {
+        #hme-footer {
+          font-size: 1.25rem;
+        }
+        #hme-footer-1 {
+          font-size: 1rem;
+        }
+      }
